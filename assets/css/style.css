@@ -8,6 +8,7 @@ html {
 
 :root {
   --primary-color: #10375c;
+  --secondary-color: #2e80ce;
 }
 
 body {
@@ -33,7 +34,7 @@ a {
   min-width: 205px;
   line-height: 60px;
   color: #ffffff;
-  background-color: #2e80ce;
+  background-color: var(--secondary-color);
   font-size: 1.8rem;
   font-weight: 400;
   border-radius: 999px;
@@ -59,34 +60,34 @@ a {
   line-height: 167%;
 }
 
-.control{
-    display: flex;
-    column-gap: 18px;
-    align-items: center;
+.control {
+  display: flex;
+  column-gap: 18px;
+  align-items: center;
 }
 
-.control__btn{
-    width: 36px;
-    height: 36px;
-    color: #575F66;
-    border: 1px solid currentColor;
-    background: transparent;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: 0.25s;
+.control__btn {
+  width: 36px;
+  height: 36px;
+  color: #575f66;
+  border: 1px solid currentColor;
+  background: transparent;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.25s;
 }
 
-.control__btn:hover{
-    color: #fff;
-    background-color: #2E80CE;
-    border-color: #2E80CE;
+.control__btn:hover {
+  color: #fff;
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
 }
 
-.control-icon--next{
-    rotate: 180deg;
+.control-icon--next {
+  rotate: 180deg;
 }
 
 /* ========================= Header-top ========================= */
@@ -254,7 +255,7 @@ a {
 
 .service-item:hover .service-item__icon {
   color: #fff;
-  background: #2e80ce;
+  background: var(--secondary-color);
 }
 
 .service-item__icon {
@@ -315,7 +316,7 @@ a {
 }
 
 .work-item:hover {
-  border-color: #2e80ce;
+  border-color: var(--secondary-color);
   transform: translateY(-16px);
 }
 
@@ -341,7 +342,7 @@ a {
 .work-item__more {
   display: inline-block;
   margin-top: 18px;
-  color: #2e80ce;
+  color: var(--secondary-color);
   font-weight: 400;
   line-height: 175%;
 }
@@ -432,8 +433,8 @@ a {
   transition: 0.5s;
 }
 
-.team-item:hover .team-item__thumb{
-    transform: scale(1.1);
+.team-item:hover .team-item__thumb {
+  transform: scale(1.1);
 }
 
 .team-item__name {
@@ -450,7 +451,52 @@ a {
   text-align: center;
 }
 
-.team__control{
-    margin-top: 38px;
-    justify-content: center;
+.team__control {
+  margin-top: 38px;
+  justify-content: center;
+}
+
+/* ========================= Install ========================= */
+.install{
+    margin: 180px 0 85px;
+}
+
+.install__inner {
+  height: 427px;
+  border-radius: 4px;
+  background-color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 70px;
+}
+
+.install__inner figure {
+  align-self: flex-end;
+}
+
+.install__img {
+  display: block;
+  width: 284px;
+  height: 522px;
+  object-fit: cover;
+}
+
+.install__content {
+  max-width: 586px;
+}
+
+.install__heading {
+  max-width: 489px;
+  color: #ffffff;
+}
+
+.install__desc {
+  color: #ffffff;
+}
+
+.install__row {
+  margin-top: 38px;
+  display: flex;
+  column-gap: 28px;
 }
