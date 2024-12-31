@@ -43,6 +43,22 @@ a {
 .btn:hover {
   opacity: 0.9;
 }
+
+.section-heading {
+  color: var(--primary-color);
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+}
+
+.section-desc {
+  margin-top: 18px;
+  color: #575f66;
+  font-size: 18px;
+  line-height: 167%;
+}
+
 /* ========================= Header-top ========================= */
 
 .header {
@@ -155,4 +171,84 @@ a {
 .hero__img--small {
   width: 210px;
   height: 410px;
+}
+
+/* ========================= Service ========================= */
+.service {
+  padding: 170px 0;
+}
+
+.service__heading,
+.section-desc {
+  text-align: center;
+}
+
+.service__desc {
+  width: 468px;
+  margin: 0 auto;
+}
+
+.service__row {
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.service__img {
+  width: 570px;
+  height: 570px;
+  border-radius: 12px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.service-item {
+  display: flex;
+  width: 470px;
+  border-radius: 10px;
+  color: #ffffff;
+  padding: 21px;
+  transition: 0.25s;
+}
+
+.service-item:hover {
+  box-shadow: 0px 14px 28px 0px #0000000d;
+  position: relative;
+}
+
+.service-item:hover .service-item__icon {
+  color: #fff;
+  background: #2e80ce;
+}
+
+.service-item__icon {
+  color: var(--primary-color);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #eff6fd;
+  box-shadow: 0px 8px 16px 0px #0000000d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  margin-right: 19px;
+  transition: 0.25s;
+}
+
+.service-item__heading {
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.service-item__desc a{
+  margin-top: 8px;
+  color: #575f66;
+  line-height: 175%;
+}
+
+.service__btn{
+    margin-top: 55px;
 }
