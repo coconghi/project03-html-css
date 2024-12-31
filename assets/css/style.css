@@ -40,10 +40,10 @@ a {
   text-align: center;
 }
 
-.btn:hover{
-    opacity: 0.9;
+.btn:hover {
+  opacity: 0.9;
 }
-/* ========================= Header ========================= */
+/* ========================= Header-top ========================= */
 
 .header {
   padding-top: 30px;
@@ -56,7 +56,6 @@ a {
   justify-content: space-between;
   align-items: center;
   position: sticky;
-  
 }
 
 .navbar__list {
@@ -90,8 +89,70 @@ a {
 }
 
 .header__action--signup {
-    margin-right: 7px;;
+  margin-right: 7px;
   min-width: 104px;
   line-height: 44px;
   font-size: 1.6rem;
+}
+
+/* ========================= Hero ========================= */
+.hero {
+  padding-top: 76px;
+  padding-bottom: 110px;
+  display: flex;
+  align-items: center;
+}
+
+.hero__content {
+  width: 44%;
+}
+
+.hero__heading {
+  color: #ffffff;
+  font-size: 7rem;
+  font-weight: 600;
+  line-height: 114%;
+  letter-spacing: -0.02em;
+}
+
+.hero__desc {
+  margin-top: 22px;
+  color: #c9d2da;
+  font-size: 1.8rem;
+  line-height: 167%;
+}
+
+.hero__row {
+  margin-top: 38px;
+  display: flex;
+  align-items: center;
+  column-gap: 38px;
+  color: #ffffff;
+}
+
+.hero__media {
+  flex: 1;
+}
+
+.hero__images {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.hero__img {
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.hero__img--large {
+  width: 330px;
+  height: 540px;
+  margin-right: -6px;
+  z-index: 1;
+}
+
+.hero__img--small {
+  width: 210px;
+  height: 410px;
 }
