@@ -90,6 +90,14 @@ a {
   rotate: 180deg;
 }
 
+input,
+textarea,
+select,
+button {
+  font-family: inherit;
+  font-size: inherit;
+}
+
 /* ========================= Header-top ========================= */
 
 .header {
@@ -596,12 +604,12 @@ a {
 }
 
 .blog-item__more:hover {
-  color: #2e80ce;
+  color: var(--secondary-color);
 }
 
 /* ========================= Appointment ========================= */
 .appointment {
-  margin: 85px 0 170px;
+  margin-top: 85px;
 }
 
 .appointment__inner {
@@ -620,17 +628,144 @@ a {
   margin: 18px auto;
   width: 136px;
   height: 2px;
-  background-color: #2e80ce;
+  background-color: var(--secondary-color);
 }
 
 .appointment__desc {
   margin: 0 auto;
-  color: #575F66;
+  color: #575f66;
   max-width: 617px;
   font-size: 1.6rem;
   line-height: 28px;
 }
 
-.appointment__btn{
-    margin-top: 38px;
+.appointment__btn {
+  margin-top: 38px;
+}
+
+/* ========================= Footer ========================= */
+footer {
+  margin-top: 170px;
+  padding: 100px 0 42px;
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--primary-color);
+}
+
+.footer__top {
+  display: grid;
+  grid-template-columns: 1fr 0.4fr 0.4fr 1fr;
+  column-gap: 78px;
+}
+
+.footer__desc {
+  margin-top: 21px;
+  color: #a9b3bb;
+  font-family: Open Sans;
+  font-weight: 400;
+  line-height: 175%;
+}
+
+.footer__heading {
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 175%;
+}
+
+.footer__list {
+  margin: 20px 0 28px;
+}
+
+.footer__item {
+  margin-bottom: 10px;
+}
+
+.footer__link {
+  color: #a9b3bb;
+  font-weight: 400;
+  line-height: 186%;
+  white-space: nowrap;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+}
+
+.footer__social {
+  margin: 20px 0 28px;
+  display: flex;
+  column-gap: 10px;
+}
+
+.footer__social--btn {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  color: var(--secondary-color);
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__social--btn:hover {
+  color: #ffffff;
+  background-color: var(--secondary-color);
+}
+
+.footer__subscribe {
+  margin-top: 20px;
+  color: #a9b3bb;
+  font-weight: 400;
+  line-height: 186%;
+}
+
+.footer__form {
+  margin-top: 10px;
+  display: flex;
+  column-gap: 12px;
+}
+
+.footer__form--input {
+  padding: 10px;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #406181;
+  width: 212px;
+  height: 46px;
+  border-radius: 4px;
+}
+
+.footer__form--input::placeholder {
+  color: #9ca8b1;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.footer__submit {
+  width: 108px;
+  height: 46px;
+  border: none;
+  border-radius: 4px;
+  background: var(--secondary-color);
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 186%;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.footer__submit:hover {
+  opacity: 0.9;
+}
+
+.footer__copyright {
+  border-top: 1px solid #406181;
+  padding-top: 28px;
+  text-align: center;
+  color: #aab3ba;
+  font-weight: 400;
+  line-height: 186%;
 }
