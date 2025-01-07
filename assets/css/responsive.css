@@ -17,7 +17,7 @@
   }
   .header__logo {
     position: absolute;
-    left: 50%;
+    left: 10px;
     translate: 50% -50%;
   }
   /* căn lại vị trí menu icon */
@@ -88,6 +88,26 @@
   .navbar__link:hover {
     background-color: rgba(100, 148, 237, 0.323);
   }
+
+  /* hero */
+  .hero {
+    flex-direction: column;
+    row-gap: 50px;
+  }
+  .hero__media {
+    order: 1;
+  }
+  .hero__content {
+    order: 2;
+  }
+  .hero__content{
+    width: 80%;
+    text-align: center;
+  }
+  .hero__row{
+    justify-content: center;
+  }
+ 
 }
 
 /* tablet */
@@ -99,8 +119,6 @@
 }
 
 /* tạm ẩn phần ko liên quan */
-.hero,
-.footer,
-.main {
+footer {
   display: none;
 }
