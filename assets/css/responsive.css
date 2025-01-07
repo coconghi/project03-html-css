@@ -31,9 +31,9 @@
     cursor: pointer;
   }
   /* căn lại overlay */
-  .menu-overlay{
+  .menu-overlay {
     position: fixed;
-    background-color: rgb(0, 0, 0,0.3);
+    background-color: rgb(0, 0, 0, 0.3);
     inset: 0;
     z-index: 1;
     /* đk bình thường của overlay */
@@ -41,7 +41,7 @@
     visibility: hidden;
     transition: 0.5s;
   }
-  .menu-checkbox:checked ~ .menu-overlay{
+  .menu-checkbox:checked ~ .menu-overlay {
     opacity: 1;
     visibility: visible;
   }
