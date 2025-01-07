@@ -148,6 +148,26 @@
     width: 90%;
     text-align: center;
   }
+
+  /* team */
+  .team__list{
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 40px;
+  }
+
+  /* install */
+  .install__inner{
+    padding: 10px;
+  }
+
+  .install__img{
+    display: none;
+  }
+
+  .install__content{
+    max-width: 90%;
+    margin: 0 auto;
+  }
 }
 
 /* tablet */
