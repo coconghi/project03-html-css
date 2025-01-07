@@ -1,6 +1,6 @@
 /* PC */
 @media (min-width: 992px) {
-  .menu-header__icon {
+  .mobile-header {
     display: none;
   }
 }
@@ -44,6 +44,49 @@
   .menu-checkbox:checked ~ .menu-overlay {
     opacity: 1;
     visibility: visible;
+  }
+  /* code cho menu drawer */
+  .menu-drawer {
+    padding: 60px;
+    position: fixed;
+    background-color: rgb(16, 14, 42);
+    inset: 0 40% 0 0;
+    z-index: 2;
+    transform: translateX(-100%);
+    transition: 0.5s;
+  }
+  .menu-checkbox:checked ~ .menu-drawer {
+    transform: translateX(0);
+  }
+
+  /* menu-top */
+  .menu-drawer__logo {
+    width: 86px;
+    object-fit: cover;
+  }
+  .close__menu {
+    width: 20px;
+    color: #fff;
+    cursor: pointer;
+  }
+  .menu-drawer__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #navbar__list--mobile {
+    margin-top: 25px;
+  }
+  .navbar__list {
+    flex-direction: column;
+    row-gap: 10px;
+  }
+  .navbar__link {
+    display: block;
+    font-size: 2rem;
+  }
+  .navbar__link:hover {
+    background-color: rgba(100, 148, 237, 0.323);
   }
 }
 
