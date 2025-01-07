@@ -1,0 +1,63 @@
+/* PC */
+@media (min-width: 992px) {
+  .menu-header__icon {
+    display: none;
+  }
+}
+
+/* tablet & mobile */
+@media (max-width: 991.98px) {
+  /* ẩn navbar */
+  .navbar {
+    display: none;
+  }
+  /* cho logo vào giữa */
+  .header-top {
+    position: relative;
+  }
+  .header__logo {
+    position: absolute;
+    left: 50%;
+    translate: 50% -50%;
+  }
+  /* căn lại vị trí menu icon */
+  .menu-header__icon {
+    position: absolute;
+    z-index: 0;
+    top: 38px;
+    left: 26px;
+    width: 24px;
+    color: #fff;
+    cursor: pointer;
+  }
+  /* căn lại overlay */
+  .menu-overlay{
+    position: fixed;
+    background-color: rgb(0, 0, 0,0.3);
+    inset: 0;
+    z-index: 1;
+    /* đk bình thường của overlay */
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+  }
+  .menu-checkbox:checked ~ .menu-overlay{
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+/* mobile */
+@media (max-width: 767.98px) {
+}
+
+/* tạm ẩn phần ko liên quan */
+.hero,
+.footer,
+.main {
+  display: none;
+}
