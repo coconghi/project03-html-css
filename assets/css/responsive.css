@@ -194,7 +194,7 @@
   .footer__column:last-of-type{
     grid-column: span 2;
   }
-
+}
 
 /* tablet */
 @media (min-width: 768px) and (max-width: 991.98px) {
