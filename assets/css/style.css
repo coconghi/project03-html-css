@@ -496,6 +496,7 @@ button {
 
 .install__content {
   max-width: 586px;
+  padding-left: 40px;
 }
 
 .install__heading {
@@ -529,7 +530,7 @@ button {
 }
 
 .blog__heading {
-  max-width: 470px;
+  max-width: 100%;
 }
 
 .blog__more {
