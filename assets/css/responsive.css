@@ -183,17 +183,38 @@
     justify-content: center;
   }
 
+  .appointment__inner {
+    padding: 100px 50px;
+  }
+
   /* footer */
-  .footer__top{
+  .footer__top {
     width: 100%;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 10% 60% 20%; 
-    gap:40px;
+    grid-template-rows: 1fr 5.5fr 3fr;
+    gap: 40px;
   }
   .footer__column:first-of-type,
-  .footer__column:last-of-type{
+  .footer__column:last-of-type {
     grid-column: span 2;
+    text-align: center;
   }
+
+  footer .logo {
+    left: 50%;
+    transform: translateX(-100%);
+  }
+
+  .footer__item{
+    display: block;
+    vertical-align: baseline;
+  }
+
+  .footer__column:last-of-type{
+    display: flex;
+    justify-content: space-between;
+  }
+
 }
 
 /* tablet */
@@ -203,5 +224,3 @@
 /* mobile */
 @media (max-width: 767.98px) {
 }
-
-
